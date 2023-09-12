@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="header"> Movie Night Planner 🎬 🍿 </h1>
+        <p class="intro"><em>Plan your perfect movie night with my Movie Night Planner – choose genres, invite friends, and enjoy a seamless cinema experience with meal deals and discounts.</em> </p>
+        <div id="main">
+          <div>
+            <br>
+            <label for="genre"> Choose a Genre: </label>
+            <select id="genre-select">
+              <option value="">--Please choose an option--</option>
+              <option value="action">Action 🥊</option>
+              <option value="comedy">Comedy 🤭 </option>
+              <option value="fantasy">Fantasy 🦸🏽</option>
+              <option value="horror">Horror 🧟‍♀️</option>
+            </select>
+            <label for="attendees"> Number of Attendees:</label>
+            <input type="number" id="attendees" min="1" placeholder="Enter number of attendees here ...">
+            <button id="generate-playlist">Generate Playlist</button>
+          </div>
+          <ul id="myList"></ul>
+        </div>
+        <div class="section">
+          <br>
+          <h2 class="section">Meal Deal</h2>
+          <input type="checkbox" id="meal-deal">
+          <label for="meal-deal">
+            Add a movie meal deal (drink + snack for £5pp)</label>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2 class="section">Random Discount Generator</h2>
+        <button id="get-discount" class="section">Get Discount</button>
+        </br>
+      
+        <section>
+          <hr>
+          <div id="header">
+            <h2 id="order-details"> What's in your basket..</h2>
+            <div id="summary">
+              <p><span id="selected-movie"></span></p>
+              <p> Meal Deal: <span id="meal-deal-checkout"></span></p>
+              <p> Discount : <span id="discount"></span> </p>
+              <p id="display-total"> Total : <span id="total"></span></p>
+            </div>
+        </section>
+        <div>
+          <textarea id="journalEntry" class="section" rows="2" cols="40" placeholder="Write a note in here for any special request e.g front row seats/ disabled parking.."></textarea>
+        </div>
+        <button id="checkout-btn">Checkout</button>
+        <div id="refresh"></div>
+        </br>
+      </div>
+      </div>
+      </div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
